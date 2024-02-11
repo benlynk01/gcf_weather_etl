@@ -27,3 +27,11 @@ exports.readObservation = (file, context) => {
         console.log('End!');
     })
 }
+
+// Helper Functions
+function printDict(row){
+    for (let key in row){
+        console.log(key + ' : ' + row[key]);
+        console.log(`${key} : ${row[key]}`);
+    }
+}
